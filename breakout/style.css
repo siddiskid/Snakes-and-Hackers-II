@@ -1,0 +1,26 @@
+body{
+
+  background-color: #be2102;
+}
+
+#header{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+#mainDiv{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myCanvas {
+	background: #eee;
+	display: block;
+	margin: 0 auto;
+  padding: 1rem;
+}
