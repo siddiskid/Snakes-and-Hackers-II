@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styleshp.css">
+    <link rel="stylesheet" href="styles/stylestic.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -32,23 +34,74 @@
     </div>
     <div class = 'islands' id="islands">
         <div class = 'ii'>
-            <a href="#"><img id = ii1 class="i" src="images/p1.png"></a>
+            <a href="#" onclick="startlevel1()"><img id = ii1 class="i1" src="images/p1.png"></a>
             <h3 class = 'lname'>Level 1</h3>
         </div>
-        <div class = 'ii'>
-            <a href="#"><img id = ii2 class="i" src="images/p2.png"></a>
+        <div class = 'ii' id="i1">
+            <a id = 'lvl2lnk' href="#"><img id = ii2 class="i2" src="images/p2 locked.png"></a>
             <h3 class = 'lname'>Level 2</h3>
         </div>
         <div class = 'ii'>
-            <a href="#"><img id = ii3 class="i" src="images/p3.png"></a>
+            <a href="#"><img id = ii3 class="i3" src="images/p3 locked.png"></a>
             <h3 class = 'lname'>Level 3</h3>
         </div>
         <div class = 'ii'>
-            <a href="#"><img id = ii4 class="i" src="images/p4.png"></a>
+            <a href="#"><img id = ii4 class="i4" src="images/p4 locked.png"></a>
             <h3 class = 'lname'>Level 4</h3>
         </div>
     </div>
 
-    <script src="script.js"></script>
+
+    <div class="tictictic" id="tictictic">
+        <div class="strtbx">
+            <header class="ticfont">Tic Tac Toe</header>
+            <div class="abab">
+              <div class="startbtn">
+                <button class="baba"><div class='random'>Start</div></button>
+              </div>
+            </div>
+          </div> 
+        
+          <!-- playboard section -->
+          <div class="board">
+            <div class="details">
+              <div class="players">
+                <span class="your">Your Turn</span>
+                <span class="bot">Bot's Turn</span>
+                <div class="slider"></div>
+              </div>
+            </div>
+            <div class="playarea">
+              <section>
+                <span class="b1"></span>
+                <span class="b2"></span>
+                <span class="b3"></span>
+              </section>
+              <section>
+                <span class="b4"></span>
+                <span class="b5"></span>
+                <span class="b6"></span>
+              </section>
+              <section>
+                <span class="b7"></span>
+                <span class="b8"></span>
+                <span class="b9"></span>
+              </section>
+            </div>
+          </div>
+        
+          <!-- result box -->
+          <div class="resultw">
+            <div class="win"></div>
+            <div class="rbtnw"><button class="random">Next stage</button></div>
+          </div>
+          <div class="resultld">
+            <div class="ld"></div>
+            <div class="rbtnld" onclick="window.location.reload()"><button>Retry</button></div>
+          </div>
+    </div>
+
+    <script src="scripts/scripthp.js"></script>
+    <script src="scripts/scripttic.js"></script>
 </body>
 </html>
