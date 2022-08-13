@@ -9,18 +9,25 @@
     </head>
     <body>
         <div id="container">
-            <div class="box-left">
-                <div id="coin"></div>
-                <table id="game_board" cellpadding="0"></table> 
-                <div id="loading">AI is making a Move</div>
-            </div>
-            <div class="box-right">
-                <div id="options">
-                    <p><button class="save" onclick="Game.restartGame();" type="submit">Restart</button></p>
+            <div class="row">
+                <div style="text-align : center;">
+                    <img src="./media/header.png">
                 </div>
+            </div>
+            <div class="row">
+                <div class="box-left">
+                    <div id="coin"></div>
+                    <table id="game_board" cellpadding="0"></table> 
+                    <div id="loading">AI is making a Move</div>
+                </div>
+                <div class="box-right">
+                    <div id="options">
+                        <p><button class="save" onclick="Game.restartGame();" type="submit">Restart</button></p>
+                    </div>
 
-                <div id="debug">
-                    <p>Status: <span id="status" class="status-running">Yet to be Started</span></p>
+                    <div id="debug">
+                        <p>Status: <span id="status" class="status-running">Yet to be Started</span></p>
+                    </div>
                 </div>
             </div>
         </div>
