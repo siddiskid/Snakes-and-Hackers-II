@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'pixel';
+    src: url('Pixeboy-z8XGD.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'sabo';
+    src: url('Sabo-Filled.otf') format('opentype');
+}
+
+body{
+    background-image: url('images/back.gif');
+}
+
+.playerimg{
+    margin: 0;
+    position: fixed;
+    z-index: -999;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.roboimg{
+    margin: 0;
+    position: fixed;
+    z-index: -999;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.initial{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.firstline{
+    display: flex;
+    justify-content: center;
+    font-family: 'sabo';
+    font-size: 36px;
+}
+
+.n1{
+    color: #ffdf00;
+    margin: 0;
+}
+
+.expl{
+    display: flex;
+    justify-content: center;
+    font-family: 'pixel';
+    font-size: 20px;
+}
+
+.bro{
+    color: white
+}
+
+.mass{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.start{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 10px;
+}
+
+.startbtn{
+    text-decoration: none;
+    font-family: 'pixel';
+    font-size: 40px;
+    color: #ef4423;
+}
+
+.startbtn:visited{
+    color: #ef4423;
+}
+
+.start:hover {
+    margin-top: -10px;
+}
+
+.islands{
+    justify-content: space-around;
+    display: none;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 900px){
+    .islands{
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        display: none;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.i{
+    width: 203.5px;
+    height: 198px;
+}
+
+.ii{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 203.5px;
+    height: 220px;
+    padding: 25px;
+}
+
+.i:hover{
+    margin-top: -20px;
+}
+
+.lname{
+    font-family: 'pixel';
+    color: white;
+    font-size: 25px;
+}
+
+.cont{
+    font-family: 'sabo';
+    color: #ffdf00;
+}
+
+.logotop{
+    margin-left: 10px;
+    display: none;
+}
