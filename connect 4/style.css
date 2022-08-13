@@ -4,8 +4,9 @@ body {
     font-family: 'Arial';
     overflow-y: hidden;
     background-image : url(.//media/background.png);
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
+    overflow-x: hidden;
 }
 
 a, a:visited{
@@ -21,16 +22,20 @@ h1 {
 #container {
     position: absolute;
     left: 50%;
-    margin-top: 50px;
-    margin-left: -255px;
+    margin-top: 5%;
+    margin-left: -15%;
 }
 
 .box-left {
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #game_board {
     border-collapse:collapse;
+    border: 2px solid black;
 }
 
 #coinfeld {
@@ -40,7 +45,7 @@ h1 {
 }
 
 #game_board td {
-    border: 0.5px dashed navy;
+    border: 0.5px solid navy;
     position: relative;
     width: 50px;
     height: 50px;
@@ -48,7 +53,7 @@ h1 {
 }
 
 .hover {
-    background-color: lightblue;
+    background-color: whitesmoke;
 }
 
 #coin {
@@ -139,11 +144,15 @@ h1 {
 #debug {
     margin-top: 10px;
     font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box-right {
     margin: 20px 10px 10px 0;
     float: left;
+    text-align: center;
 }
 
 .box-left {
