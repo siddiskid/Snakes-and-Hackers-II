@@ -204,18 +204,15 @@ Game.prototype.updateStatus = function() {
     if (that.board.score() == -that.score) {
         that.status = 1;
         that.markWin();
-        alert("You defeated the AI !");
     }
 
     if (that.board.score() == that.score) {
         that.status = 2;
         that.markWin();
-        alert("You lost to AI !");
     }
 
     if (that.board.isFull()) {
         that.status = 3;
-        alert("It's a Tie!");
     }
 
     var html = document.getElementById('status');
