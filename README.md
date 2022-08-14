@@ -1,6 +1,6 @@
 # Ryu's Conquest
 
-[Thumbnail](images/devpost-thumbnail.png)
+![Thumbnail](images/devpost-thumbnail.png)
 
 ## Inspiration
 
