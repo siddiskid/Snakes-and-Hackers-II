@@ -12,25 +12,21 @@ Web Application drive you through retro games one by one in order of increasing 
 
 ## How we built it
 
-Application has been designed using elementary tools of Web Development like HTML,CSS and JavaScript to design the Frontend. All the games have been developed using JavaScript and jQuery.
+Application has been designed using elementary tools of Web Development like HTML,CSS and JavaScript to design the Frontend. All the games have been developed using JavaScript and jQuery. It has been document on GitHub and hosted using GitHub Pages
 
 ## Challenges we ran into
 
-
+At first we were focused on putting all games on the same page but due to some issues we had to redirect them.
 
 ## Accomplishments that we're proud of
 
-We were successful in developing a Web Application and feel pride in bringing our thoughts to reality. It was a golden opportunity to network with people from different time zones coming together to develop a project.
+We were successful in developing a Web Application and feel proud in bringing our thoughts to reality. It was a golden opportunity to network with people from different time zones coming together to develop a project.
 
 ## What we learned
 
 We got a lot of exposure in Game Development using JavaScript. Also we documented our project on GitHub ensuring best practices are followed. 
 
-## What's next for Ryu's Conquest
-
-We believe that this Project possesses tremendous potential and can be taken forward. Time Clock can be added along with escalation in game difficulties. Also we need not restrict to only 4 planets and incorporate new games spanning numerous categories. As a future work we can work upon adding multiplayer and chat capabilities to enhance robustness of the project.
-
-
+## Screenshots
 
 <table>
   <tr>
@@ -59,10 +55,14 @@ We believe that this Project possesses tremendous potential and can be taken for
   </tr>
 </table>
 
+## What's next for Ryu's Conquest
+
+We believe that this Project possesses tremendous potential and can be taken forward. Time Clock can be added along with escalation in game difficulties. Also we need not restrict to only 4 planets and incorporate new games spanning numerous categories. As a future work we can work upon adding multiplayer and chat capabilities to enhance robustness of the project.
 
 ## Process to use
 1. Clone the repository using `git clone https://github.com/akshatsood2025/Snakes-and-Hackers-II.git`
-2. Execute index.html in your browser
+2. `cd Snakes-and-Hackers-II`
+3. Execute index.html in your browser
 
 ## Techstack
 <code><img height="100" src="https://freeiconshop.com/wp-content/uploads/edd/html-outline.png"></code>
