@@ -37,23 +37,23 @@ We believe that this Project possesses tremendous potential and can be taken for
   </tr>
   <tr>
     <td>Main Page</td>
-    <td><img src="https://user-images.githubusercontent.com/56976049/184529124-101a47cb-59d9-485f-9a90-57e80b01cecb.png"></td>
+    <td><img src="https://user-images.githubusercontent.com/56976049/184529124-101a47cb-59d9-485f-9a90-57e80b01cecb.png" width="350" height="350"></td>
   </tr>
   <tr>
     <td>TicTacToe</td>
-    <td><img src="https://user-images.githubusercontent.com/56976049/184529134-811264df-fc01-433d-96c9-bb06fc559a18.png"></td>
+    <td><img src="https://user-images.githubusercontent.com/56976049/184529134-811264df-fc01-433d-96c9-bb06fc559a18.png" width="350" height="350"></td>
   </tr>
   <tr>
     <td>BreakDown</td>
-    <td><img src="https://user-images.githubusercontent.com/56976049/184529142-40373a3b-b94c-458b-bd49-71fdf7e0ea0a.png"></td>
+    <td><img src="https://user-images.githubusercontent.com/56976049/184529142-40373a3b-b94c-458b-bd49-71fdf7e0ea0a.png" width="350" height="350"></td>
   </tr>
   <tr>
     <td>Connect 4</td>
-    <td><img src="https://user-images.githubusercontent.com/56976049/184529148-8fe91d60-2388-4561-ade8-b01e04e354c2.png"></td>
+    <td><img src="https://user-images.githubusercontent.com/56976049/184529148-8fe91d60-2388-4561-ade8-b01e04e354c2.png" width="350" height="350"></td>
   </tr>
   <tr>
     <td>Chess</td>
-    <td><img src="https://user-images.githubusercontent.com/56976049/184529152-2e863339-1551-41b0-a349-892a6141ac36.png"></td>
+    <td><img src="https://user-images.githubusercontent.com/56976049/184529152-2e863339-1551-41b0-a349-892a6141ac36.png" width="350" height="350"></td>
   </tr>
 </table>
 
