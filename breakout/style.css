@@ -13,6 +13,9 @@ a{
 a:visited{
   text-decoration: none;
 }
+.logotop:hover{
+  margin-top: -10px;
+}
 body{
   background-image: url(../images/back.gif);
 }

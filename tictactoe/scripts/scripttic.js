@@ -86,7 +86,8 @@ function selectWinner(){
         
         if (playerSign == 'X'){
             localStorage.setItem('firstlevelcompleted', 'true')
-            wtxt.innerHTML = `You beat robot!`;
+            wtxt.innerHTML = `You beat Galatron! <br>
+            "I was just warming up, see if you can beat me in the next one"`;
             setTimeout(()=>{
                 rsltbxw.classList.add("show");
                 plybrd.classList.remove("show");

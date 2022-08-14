@@ -124,7 +124,7 @@ function collisionDetection() {
 					if(score == brickRowCount*brickColumnCount) {
 						canv.style.display = 'none'
 						localStorage.setItem('secondlevelcompleted', 'true')
-						wintxt.innerHTML = 'You beat robot!'
+						wintxt.innerHTML = 'You beat Galatron! <br> "Looks like I must start taking you seriously"'
 						setTimeout(()=>{
 							rsltbxw.classList.add("show");
 						}, 700);

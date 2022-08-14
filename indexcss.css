@@ -145,3 +145,72 @@ a:visited{
     margin-left: 10px;
     display: block;
 }
+.final1{
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    display: flex;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.final2{
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    display: flex;
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.finimg{
+    width: 500px;
+    height: 500px;
+}
+.aba{
+    font-family: 'pixel';
+    color: white;
+    font-size: 25px;
+}
+.final3{
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    display: flex;
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.startbtn button{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    background: #30c030;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    display: flex;
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .startbtn button:hover,
+  .btn button:hover{
+    transform: scale(0.96);
+  }
+  .startbtn button.baba{
+    margin-right: 5px;
+  }
+  .startbtn button.playerO{
+    margin-left: 5px;
+  }

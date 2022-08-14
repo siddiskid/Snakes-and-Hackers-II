@@ -25,6 +25,9 @@ a{
 a:visited{
     text-decoration: none;
 }
+.logotop:hover{
+  margin-top: -10px;
+}
 .strtbx, .board, .resultw, .resultld{
     position: absolute;
     top: 50%;

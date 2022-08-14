@@ -234,7 +234,7 @@ Game.prototype.updateStatus = function() {
     //     html.innerHTML = "In Progress";
     // }
     if (that.status == 1) { win
-        wintxt.innerHTML = 'You beat robot!'
+        wintxt.innerHTML = 'You beat Galatron!'
         localStorage.setItem('thirdlevelcompleted', 'true')
         setTimeout(()=>{
             rsltbxw.classList.add("show");
@@ -242,7 +242,7 @@ Game.prototype.updateStatus = function() {
         }, 700);
     }
     if (that.status == 2) {
-        ldtxt.innerHTML = 'You lost!'
+        ldtxt.innerHTML = 'You lost! <br> "You will never take these games back from me"'
         setTimeout(()=>{
             rsltbxld.classList.add("show");
             plybrd.style.display= 'none';
