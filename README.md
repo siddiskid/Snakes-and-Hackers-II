@@ -29,6 +29,20 @@ We got a lot of exposure in Game Development using JavaScript. Also we documente
 We believe that this Project possesses tremendous potential and can be taken forward. Time Clock can be added along with escalation in game difficulties. Also we need not restrict to only 4 planets and incorporate new games spanning numerous categories. As a future work we can work upon adding multiplayer and chat capabilities to enhance robustness of the project.
 
 
+
+<table>
+  <tr>
+    <th>Page</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Main Page</td>
+    <td>![image](https://user-images.githubusercontent.com/56976049/184529124-101a47cb-59d9-485f-9a90-57e80b01cecb.png)</td>
+  </tr>
+</table>
+
+
+
 | Page  | Description |
 | ------------- | ------------- |
 
