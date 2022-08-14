@@ -4,6 +4,8 @@ Here is platform where you can play broad games. There are 4 stages in increasin
 We have TicTacToe, Connect 4, Breakout and Chess.</br>
 
 
+| Page  | Description |
+| ------------- | ------------- |
 
 | Main page | ![image](https://user-images.githubusercontent.com/56976049/184529124-101a47cb-59d9-485f-9a90-57e80b01cecb.png) |
 | TicTacToe | ![image](https://user-images.githubusercontent.com/56976049/184529134-811264df-fc01-433d-96c9-bb06fc559a18.png) |
