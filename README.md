@@ -1,5 +1,7 @@
 # Ryu's Conquest
 
+[Thumbnail](images/devpost-thumbnail.png)
+
 ## Inspiration
 
 Once upon a time, a village is invaded by an army of malevolent robots. Upon leaving, they took away the most valuable things in the world, games. While the inhabitants of the village were filled with sadness, a brave warrior named Ryu has decided to step up and go on a quest to bring back the games. To do that, he need to beat the robots in four famous games on planet Xamos, Opus, Icrozar and Duex, respectively. Let’s see if he can beat the robots!
