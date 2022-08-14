@@ -1,7 +1,33 @@
-# Snakes-and-Hackers-II
+# Ryu's Conquest
 
-Here is platform where you can play broad games. There are 4 stages in increasing difficulty. When you complete one stage, the other unlocks itself.</br>
-We have TicTacToe, Connect 4, Breakout and Chess.</br>
+## Inspiration
+
+
+
+## What it does
+
+Application takes you through retro games one by one in order of increasing difficulties
+
+## How we built it
+
+Application has been designed using elementary tools of Web Development like HTML,CSS and JavaScript. All the games have been developed using JavaScript and jQuery.
+
+## Challenges we ran into
+
+
+
+## Accomplishments that we're proud of
+
+We were successful in developing a Web Application and feel pride in bring our thoughts to reality. It was also a golden opportunity to network with people from different time zones coming together developing a project. 
+
+## What we learned
+
+We got lot of exposure in Game Development using JavaScript. 
+
+## What's next for Ryu's Conquest
+
+We believe that this Project possesses tremendous potential and can be taken forward. Time Clock can be added along with escalation in game difficulties. Also we need not restrict to only 4 planets and incorporate new games spanning numerous categories. As a future work we can also focus upon adding multiplayer feature along with chat capability.
+
 
 
 | Page  | Description |
