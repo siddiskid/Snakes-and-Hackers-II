@@ -1,3 +1,16 @@
+const wintxt = document.getElementById('win'),
+ldtxt = document.getElementById('ld'),
+rsltbxw = document.querySelector(".resultw"),
+plybrd = document.getElementById('container'),
+rsltbxld = document.querySelector(".resultld"),
+baba = document.getElementById('baba'),
+strtbx = document.getElementById('strtbx');
+
+baba.onclick = () =>{
+    plybrd.style.display = 'flex'
+    strtbx.style.display = 'none'
+}
+
 /**
  * @jQuery version
  */
@@ -216,18 +229,31 @@ Game.prototype.updateStatus = function() {
     }
 
     var html = document.getElementById('status');
-    if (that.status == 0) {
-        html.className = "status-running";
-        html.innerHTML = "In Progress";
-    } else if (that.status == 1) {
-        html.className = "status-won";
-        html.innerHTML = "Won";
-    } else if (that.status == 2) {
-        html.className = "status-lost";
-        html.innerHTML = "Lost";
-    } else {
-        html.className = "status-tie";
-        html.innerHTML = "Tie";
+    // if (that.status == 0) {
+    //     html.className = "status-running";
+    //     html.innerHTML = "In Progress";
+    // }
+    if (that.status == 1) { win
+        wintxt.innerHTML = 'You beat robot!'
+        localStorage.setItem('thirdlevelcompleted', 'true')
+        setTimeout(()=>{
+            rsltbxw.classList.add("show");
+            plybrd.style.display= 'none';
+        }, 700);
+    }
+    if (that.status == 2) {
+        ldtxt.innerHTML = 'You lost!'
+        setTimeout(()=>{
+            rsltbxld.classList.add("show");
+            plybrd.style.display= 'none';
+        }, 700);
+    } 
+    if (that.status == 3){
+        ldtxt.innerHTML = 'You drew!'
+        setTimeout(()=>{
+            rsltbxld.classList.add("show");
+            plybrd.style.display= 'none';
+        }, 700);
     }
 }
 
@@ -238,19 +264,17 @@ Game.prototype.markWin = function() {
     }
 }
 
-Game.prototype.restartGame = function() {
-    if (confirm('Are you sure you want to Restart ? ')) {
-        
-        that.status = 0;
-        that.round = 0;
-        that.init();
-        document.getElementById('game_board').className = "";
-        that.updateStatus();
+Game.prototype.restartGame = function() {       
+    that.status = 0;
+    that.round = 0;
+    that.init();
+    rsltbxld.classList.remove("show");
+    plybrd.style.display= 'block';
+    that.updateStatus();
 
-        $('td').hover(function() {
-            $(this).parents('table').find('col:eq('+$(this).index()+')').toggleClass('hover');
-        });
-    }
+    $('td').hover(function() {
+        $(this).parents('table').find('col:eq('+$(this).index()+')').toggleClass('hover');
+    });
 }
 
 /**

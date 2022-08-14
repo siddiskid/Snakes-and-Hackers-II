@@ -1,5 +1,20 @@
 var canvas = document.getElementById('myCanvas');
 var ctx = canvas.getContext('2d');
+const canv = document.getElementById('mainDiv')
+const strtbtn = document.getElementById('baba')
+const a = document.getElementById('tictictic')
+const wintxt = document.getElementById('win'),
+ldtxt = document.getElementById('ld'),
+rsltbxw = document.querySelector(".resultw"),
+rsltbxld = document.querySelector(".resultld"),
+strtbx = document.getElementById('strtbx'),
+rbtnw = rsltbxw.querySelector("button");
+
+strtbtn.onclick = () =>{
+	canvas.style.display = 'flex'
+	a.style.display = 'none'
+	mt = setTimeout(startgame(), 3000)
+}
 
 var x = canvas.width/2;
 var y = canvas.height - 30;
@@ -20,6 +35,7 @@ var brickOffsetTop = 30;
 var brickOffsetLeft = 30;
 var score = 0;
 var lives = 3;
+stopid= null
 
 var bricks = [];
 for (c=0; c<brickColumnCount; c++) {
@@ -28,6 +44,8 @@ for (c=0; c<brickColumnCount; c++) {
 		bricks[c][r] = {x: 0, y:0, status: 1};
 	}
 }
+
+cl = [ 'white', 'black']
 
 document.addEventListener("keydown", keyDownHandler);
 document.addEventListener("keyup", keyUpHandler);
@@ -42,7 +60,17 @@ function drawBricks() {
 				bricks[c][r].y = brickY;
 				ctx.beginPath();
 				ctx.rect(brickX, brickY, brickWidth, brickHeight);
-				ctx.fillStyle = "#be2102";
+				if (r == 0){
+					ctx.fillStyle = '#EA2014';
+				}else if (r ==1){
+					ctx.fillStyle = '#4F6F23';
+				}else if (r ==2){
+					ctx.fillStyle = '#FD7F19';
+				}else if (r ==3){
+					ctx.fillStyle = '#FBB533';
+				} else{
+					ctx.fillStyle = '#498CA4';
+				}
 				ctx.fill();
 				ctx.closePath();
 			}
@@ -94,8 +122,12 @@ function collisionDetection() {
 					b.status = 0;
 					score++;
 					if(score == brickRowCount*brickColumnCount) {
-						// GAME WIN HERE
-						document.location.reload();
+						canv.style.display = 'none'
+						localStorage.setItem('secondlevelcompleted', 'true')
+						wintxt.innerHTML = 'You beat robot!'
+						setTimeout(()=>{
+							rsltbxw.classList.add("show");
+						}, 700);
 					}
 				}
 			}
@@ -104,13 +136,13 @@ function collisionDetection() {
 }
 
 function drawScore () {
-	ctx.font = "16px Arial";
+	ctx.font = "16px pixel";
 	ctx.fillStyle = "black";
 	ctx.fillText("Score: "+score, 8, 20);
 }
 
 function drawLives() {
-	ctx.font = "16px Arial";
+	ctx.font = "16px pixel";
 	ctx.fillStyle = "#black";
 	ctx.fillText("Lives: "+lives, canvas.width-65, 20);
 }
@@ -131,9 +163,13 @@ function draw() {
 			dy = -dy;
 		} else {
 			lives--;
-			if(!lives) {
-        // GAME OVER HERE
-				document.location.reload();
+			if( lives == 0) {
+				canv.style.display = 'none'
+				rsltbxw.innerHTML = ' '
+				ldtxt.innerHTML = 'You lost!'
+				setTimeout(()=>{
+					rsltbxld.classList.add("show");
+				}, 700);
 			} else {
 				x = canvas.width/2;
 				y = canvas.height-30;
@@ -156,7 +192,10 @@ function draw() {
 
 	x += dx;
 	y += dy;
-	requestAnimationFrame(draw);
+	
+	if (lives != 0 && score != 25){
+		stopid = requestAnimationFrame(draw)
+	}
 }
 
 document.addEventListener("mousemove", mouseMoveHandler);
@@ -168,4 +207,10 @@ function mouseMoveHandler(e) {
 	}
 }
 
-draw();
+function startgame(){
+	draw();
+}
+
+rbtnw.onclick = ()=>{
+	window.location.href = '../planets.html'
+}

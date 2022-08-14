@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <title>Tic Tac Toe Game</title> -->
+    <link rel="stylesheet" href="styles/styletic.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <div class="logotop" id="logotop">
+    <a href='../planets.html'><h1 class='cont'>NAME</h1></a>
+  </div>
+  <div id = 'playerimg' class="playerimg">
+    <img class = 'playerimgmg' src="../images/playerimg.png">
+  </div>
+  <div id="roboimg" class ='roboimg'>
+    <img class = 'roboimgmg' src = '../images/roboimg.png'>
+  </div>
+  <!-- select box -->
+  <div class="tictictic" id="tictictic">
+    <div class="strtbx">
+        <header class="ticfont">Tic Tac Toe</header>
+        <div class="abab">
+          <div class="startbtn">
+            <button class="baba"><div class='random'>Start</div></button>
+          </div>
+        </div>
+    </div> 
+    
+    <div class="board">
+      <div class="details">
+        <div class="players">
+          <span class="your">Your Turn</span>
+          <span class="bot">Bot's Turn</span>
+          <div class="slider"></div>
+        </div>
+      </div>
+      <div class="playarea">
+        <section>
+          <span class="b1"></span>
+          <span class="b2"></span>
+          <span class="b3"></span>
+        </section>
+        <section>
+          <span class="b4"></span>
+          <span class="b5"></span>
+          <span class="b6"></span>
+        </section>
+        <section>
+          <span class="b7"></span>
+          <span class="b8"></span>
+          <span class="b9"></span>
+        </section>
+      </div>
+    </div>
+    
+
+    <div class="resultw">
+      <div class="win"></div>
+      <div class="rbtnw"><button class="random">Next stage</button></div>
+    </div>
+    <div class="resultld">
+      <div class="ld"></div>
+      <div class="rbtnld" onclick="window.location.reload()"><button class="random">Retry</button></div>
+    </div>
+  </div>
+
+  <script src="scripts/scripttic.js"></script> 
+</body>
+</html>
