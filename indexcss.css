@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'pixel';
-    src: url('../fonts/Pixeboy-z8XGD.ttf') format('truetype');
+    src: url('fonts/Pixeboy-z8XGD.ttf') format('truetype');
 }
 @font-face {
     font-family: 'sabo';
-    src: url('../fonts/Sabo-Filled.otf') format('opentype');
+    src: url('fonts/Sabo-Filled.otf') format('opentype');
 }
 body{
-    background-image: url('../images/back.gif');
+    background-image: url('images/back.gif');
 }
 a{
     text-decoration: none;
