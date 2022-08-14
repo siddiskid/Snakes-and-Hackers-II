@@ -39,7 +39,7 @@ We believe that this Project possesses tremendous potential and can be taken for
   </tr>
   <tr>
     <td>Main Page</td>
-    <td><img src="https://user-images.githubusercontent.com/56976049/184529124-101a47cb-59d9-485f-9a90-57e80b01cecb.png" width="625" height="350"></td>
+    <td><img src="https://github.com/akshatsood2025/Snakes-and-Hackers-II/blob/main/images/planets-names.png" width="625" height="350"></td>
   </tr>
   <tr>
     <td>TicTacToe</td>
